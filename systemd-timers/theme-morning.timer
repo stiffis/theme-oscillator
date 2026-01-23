@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily theme change to Kanagawa at 7 AM
+Requires=theme-morning.service
+
+[Timer]
+OnCalendar=*-*-* 07:00:00
+Persistent=true
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target

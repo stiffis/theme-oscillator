@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily theme change to Gruvbox at 8:52 PM
+Requires=theme-evening.service
+
+[Timer]
+OnCalendar=*-*-* 20:52:00
+Persistent=true
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target

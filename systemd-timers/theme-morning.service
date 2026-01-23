@@ -1,0 +1,10 @@
+[Unit]
+Description=Apply Kanagawa theme (day mode)
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/USER/.config/theme-oscillator/switch-theme.sh 1
+
+[Install]
+WantedBy=default.target

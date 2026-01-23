@@ -1,0 +1,45 @@
+/* Gruvbox Dark theme for Waybar */
+/* Based on gruvbox color scheme by morhetz */
+/* https://github.com/morhetz/gruvbox */
+
+/* Gruvbox colors */
+@define-color gruvbox-bg        #282828;
+@define-color gruvbox-fg        #ebdbb2;
+@define-color gruvbox-red       #cc241d;
+@define-color gruvbox-green     #98971a;
+@define-color gruvbox-yellow    #d79921;
+@define-color gruvbox-blue      #458588;
+@define-color gruvbox-aqua      #689d6a;
+@define-color gruvbox-orange    #fe8019;
+@define-color gruvbox-purple    #b16286;
+
+/* Catppuccin-like variables mapped to Gruvbox */
+@define-color rosewater         #ff9999;
+@define-color flamingo          #f0857a;
+@define-color pink              #d65d75;
+@define-color mauve             #9e7bb3;
+@define-color red               @gruvbox-red;
+@define-color maroon            #fb4934;
+@define-color peach             @gruvbox-orange;
+@define-color yellow            @gruvbox-yellow;
+@define-color green             @gruvbox-green;
+@define-color teal              @gruvbox-aqua;
+@define-color sky               @gruvbox-blue;
+@define-color sapphire          @gruvbox-blue;
+@define-color blue              @gruvbox-blue;
+@define-color lavender          @gruvbox-purple;
+@define-color text              @gruvbox-fg;
+@define-color subtext1          #d5c4a1;
+@define-color subtext0          #a9a793;
+@define-color overlay2          #928374;
+@define-color overlay1          #7c6f64;
+@define-color overlay0          #665c54;
+@define-color surface2          #4f4a41;
+@define-color surface1          #3c3836;
+@define-color surface0          #32302f;
+@define-color base              @gruvbox-bg;
+@define-color mantle            @gruvbox-bg;
+@define-color crust             #1d2021;
+
+/* Module-specific colors */
+@define-color theme_text_color  @gruvbox-fg;
