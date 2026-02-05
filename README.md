@@ -1,12 +1,12 @@
-# 🌗 theme-oscillator
+# theme-oscillator
 
 Automatic theme switching system for Hyprland with day/night themes.
 
-**Kanagawa** (Day, 7:00 AM) ↔ **Gruvbox** (Night, 8:52 PM)
+**Kanagawa** (Day, 7:00 AM) <-> **Gruvbox** (Night, 8:52 PM)
 
 ---
 
-## 📋 Features
+## Features
 
 - **11 applications supported**: GTK, Neovim, Kitty, Waybar, Wallpaper, Hyprlock, Obsidian, wlogout, rofi, swaync, zathura
 - **Automatic switching**: Timers for 7:00 AM (Kanagawa) and 8:52 PM (Gruvbox)
@@ -16,7 +16,7 @@ Automatic theme switching system for Hyprland with day/night themes.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ exec-once = ~/.config/hypr/scripts/switch-theme-on-startup.sh
 
 ---
 
-## 📖 Usage
+## Usage
 
 ### Manual Theme Switch
 
@@ -127,25 +127,25 @@ systemctl --user stop theme-evening.timer
 
 ---
 
-## 📁 Supported Applications
+## Supported Applications
 
 | # | Application | Change Method | Reloads Without Close |
 |---|-------------|---------------|----------------------|
-| 1 | GTK | gsettings + sed | ✅ Yes |
-| 2 | Neovim | File watcher + Lua | ✅ Yes |
-| 3 | Kitty | Socket IPC | ✅ Yes |
-| 4 | Waybar | SIGUSR1/SIGUSR2 | ✅ Yes |
-| 5 | Wallpaper | swww img | ✅ Yes |
-| 6 | Hyprlock | wallust + cp | ✅ Yes |
-| 7 | Obsidian | File watcher + JS | ✅ Yes |
-| 8 | wlogout | CSS swap | ✅ Yes |
-| 9 | rofi | wallust colors | ✅ Yes |
-| 10 | swaync | CSS reload | ✅ Yes |
-| 11 | zathura | Config file | ❌ Requires restart |
+| 1 | GTK | gsettings + sed | Yes |
+| 2 | Neovim | File watcher + Lua | Yes |
+| 3 | Kitty | Socket IPC | Yes |
+| 4 | Waybar | SIGUSR1/SIGUSR2 | Yes |
+| 5 | Wallpaper | swww img | Yes |
+| 6 | Hyprlock | wallust + cp | Yes |
+| 7 | Obsidian | File watcher + JS | Yes |
+| 8 | wlogout | CSS swap | Yes |
+| 9 | rofi | wallust colors | Yes |
+| 10 | swaync | CSS reload | Yes |
+| 11 | zathura | Config file | No (Requires restart) |
 
 ---
 
-## 🔧 Customization
+## Customization
 
 ### Change Timer Schedules
 
@@ -182,7 +182,7 @@ See `TEMPLATE.md` for a template on how to add new applications.
 
 ---
 
-## 📝 Configuration
+## Configuration
 
 All configurable paths are documented in `CONFIGURATION.md`.
 
@@ -193,7 +193,7 @@ Key files to configure:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Waybar disappears after theme switch
 
@@ -221,7 +221,7 @@ journalctl --user -u theme-evening.service -n 50
 
 ---
 
-## 📄 Files Overview
+## Files Overview
 
 ```
 theme-oscillator/
@@ -247,7 +247,7 @@ theme-oscillator/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -256,7 +256,7 @@ theme-oscillator/
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **GPL-3.0 License**.
 
@@ -264,7 +264,7 @@ See `LICENSE` file for details.
 
 ---
 
-## 🙏 Credits
+## Credits
 
 - **Kanagawa Theme**: Based on [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
 - **Gruvbox Theme**: Based on [gruvbox](https://github.com/morhetz/gruvbox)
@@ -272,4 +272,4 @@ See `LICENSE` file for details.
 
 ---
 
-Made with 💜 for the Hyprland community
+Made with love for the Hyprland community
